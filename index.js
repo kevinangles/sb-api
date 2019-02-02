@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/users', db.getUsers);
 
+app.post('/register', db.register);
+
 app.listen(port, () => {
   console.log(`API running on port ${port}`)
 });
